@@ -1,4 +1,4 @@
-# 🌟 blakemcgahee's Professional Portfolio 🌟
+# 🌟 Blake McGahee's Professional Portfolio 🌟
 
 ### 👋 Hello!
 
