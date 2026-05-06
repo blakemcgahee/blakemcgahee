@@ -2,17 +2,18 @@
 
 ### 👋 Hello!
 
-I'm a passionate and results-driven developer focusing on **Data Structures, Algorithm Efficiency, and Systems Programming**. I thrive on tackling complex engineering challenges, from optimizing search algorithms to designing core computer architecture simulations. I specialize in **Python** and **C/C++**, and I'm always looking for opportunities to leverage efficient code to solve real-world problems.
+I'm a passionate and results-driven developer focusing on **Data Structures, Algorithm Efficiency, and Systems Programming**. I thrive on tackling complex engineering challenges, from optimizing search algorithms to designing core computer architecture simulations. I specialize in **Python**, **C/C++**, and **Java**, and I'm always looking for opportunities to leverage efficient code to solve real-world problems.
 
 ### 🛠️ Key Skills & Technologies
 
 | Area | Skills Highlighted |
 | :--- | :--- |
 | **Data Structures & Algos** | AVL Trees, Linked Lists, Graph Theory, Iterative & Recursive Algorithms |
+| **Compiler Design** | Lexing, Parsing, AST Construction, Semantic Analysis, Code Generation |
 | **Game Development** | Minesweeper, Sudoku Generator, Blackjack, Pakudex / Pakuri |
 | **Systems & Architecture** | Cache Simulation (LRU/FIFO), Memory Hierarchy, Low-level Programming (C/C++) |
 | **Analysis & Optimization** | Big O Notation, Comparative Performance Analysis, Data Compression (RLE) |
-| **Languages** | C/C++, Python |
+| **Languages** | C/C++, Python, Java |
 
 ***
 
@@ -20,19 +21,35 @@ I'm a passionate and results-driven developer focusing on **Data Structures, Alg
 
 These are my most significant projects, showcasing my proficiency in core computer science principles and advanced analysis.
 
-### 1. Cache Simulation
+### 1. PLC Compiler
+**Repository:** [https://github.com/blakemcgahee/PLC_Project](https://github.com/blakemcgahee/PLC_Project)
+
+* **Core Concepts:** Compiler Design, Lexical Analysis, Recursive Descent Parsing, Semantic Analysis, Code Generation, Interpreter Design.
+* **Summary:** A **full compiler pipeline** built from scratch in Java, implementing every stage of compilation end-to-end. Processes a custom programming language through tokenization, parsing, type checking, and execution.
+* **Analysis Focus:**
+
+| Stage | Component | Responsibility |
+| :--- | :--- | :--- |
+| **Lexing** | Lexer | Tokenizes raw source code into structured tokens |
+| **Parsing** | Parser | Builds an AST via recursive descent parsing |
+| **Analysis** | Analyzer | Performs semantic analysis and type checking |
+| **Generation** | Generator | Emits target code from the validated AST |
+| **Execution** | Interpreter | Executes the generated output directly |
+
+### 2. Cache Simulation
 **Repository:** [https://github.com/blakemcgahee/Cache-Simulation](https://github.com/blakemcgahee/Cache-Simulation)
 
 * **Core Concepts:** Computer Architecture, Memory Hierarchy, LRU/FIFO Replacement Policies, Associativity, System Optimization.
 * **Summary:** A detailed **Cache Simulation** and performance analysis, demonstrating an understanding of memory hierarchy. It evaluates cache hit rates and analyzes the impact of parameters like associativity, cache size, and replacement policy.
 * **Analysis Focus:**
-    | Parameter | Values Examined | Goal |
-    | :--- | :--- | :--- |
-    | **Cache Size** | 256 B to 16,384 B | Observe how hit rate scales with total capacity. |
-    | **Associativity** | Direct-mapped to Fully-associative | Compare trade-offs between complexity and reduced conflict misses. |
-    | **Replacement Policy** | LRU, FIFO | Compare effectiveness in managing blocks. |
 
-### 2. A Search Algorithm Performance Study
+| Parameter | Values Examined | Goal |
+| :--- | :--- | :--- |
+| **Cache Size** | 256 B to 16,384 B | Observe how hit rate scales with total capacity. |
+| **Associativity** | Direct-mapped to Fully-associative | Compare trade-offs between complexity and reduced conflict misses. |
+| **Replacement Policy** | LRU, FIFO | Compare effectiveness in managing blocks. |
+
+### 3. A Search Algorithm Performance Study
 **Repository:** [https://github.com/blakemcgahee/the-searchers-final-project](https://github.com/blakemcgahee/the-searchers-final-project)
 
 * **Core Concepts:** Comparative Algorithm Analysis, Data Visualization, Big O Notation, Algorithm Efficiency.
