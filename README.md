@@ -2,18 +2,19 @@
 
 ### 👋 Hello!
 
-I'm a passionate and results-driven developer focusing on **Data Structures, Algorithm Efficiency, and Systems Programming**. I thrive on tackling complex engineering challenges, from optimizing search algorithms to designing core computer architecture simulations. I specialize in **Python**, **C/C++**, and **Java**, and I'm always looking for opportunities to leverage efficient code to solve real-world problems.
+I'm a passionate and results-driven developer focusing on **Backend Systems, Data Structures, Algorithm Efficiency, and Systems Programming**. I thrive on tackling complex engineering challenges, from designing database backed APIs to optimizing search algorithms and building core computer architecture simulations. I specialize in **TypeScript**, **Python**, **C/C++**, and **Java**, and I'm always looking for opportunities to leverage efficient code to solve real-world problems.
 
 ### 🛠️ Key Skills & Technologies
 
 | Area | Skills Highlighted |
 | :--- | :--- |
+| **Backend & Databases** | REST API Design, PostgreSQL, Schema Design and Migrations, Authentication, Access Control |
 | **Data Structures & Algos** | AVL Trees, Linked Lists, Graph Theory, Iterative & Recursive Algorithms |
 | **Compiler Design** | Lexing, Parsing, AST Construction, Semantic Analysis, Code Generation |
 | **Game Development** | Minesweeper, Sudoku Generator, Blackjack, Pakudex / Pakuri |
 | **Systems & Architecture** | Cache Simulation (LRU/FIFO), Memory Hierarchy, Low-level Programming (C/C++) |
 | **Analysis & Optimization** | Big O Notation, Comparative Performance Analysis, Data Compression (RLE) |
-| **Languages** | C/C++, Python, Java |
+| **Languages** | C/C++, Python, Java, TypeScript, SQL |
 
 ***
 
@@ -21,7 +22,26 @@ I'm a passionate and results-driven developer focusing on **Data Structures, Alg
 
 These are my most significant projects, showcasing my proficiency in core computer science principles and advanced analysis.
 
-### 1. PLC Compiler
+### 1. Health Hub (In Progress)
+**Repository:** Private (UF Senior Design team project, source available on request)
+**Status:** In active development, pilot demo planned for December 2026
+
+* **Core Concepts:** Backend API Design, Relational Database Modeling, Authentication and Access Control, Automated Testing, Containerized Development.
+* **Summary:** A **full stack patient engagement platform** for independent practices and mid market clinics, built by a team of three in a TypeScript monorepo. Patients book and manage appointments, clinical staff chart encounters and write notes, and administrators manage staff, financials, and audit history. I own the **backend, database, and data layer**.
+* **My Contributions:**
+
+| Area | What I Built |
+| :--- | :--- |
+| **Database** | PostgreSQL schema covering identity, scheduling, clinical, billing, and audit data, with forward and rollback migrations |
+| **Authentication** | Login and session management with Argon2 password hashing and hashed session tokens that can be revoked |
+| **Access Control** | Role based permissions for patients, clinical staff, and administrators, enforced on the server and covered by negative tests |
+| **Scheduling** | Provider availability and booking logic, with database constraints that make double booking and overlapping appointments impossible |
+| **Testing** | 390+ automated tests with Vitest across API routes and database behavior |
+| **Data** | Deterministic synthetic seed data generator for realistic demo and test datasets |
+
+* **Stack:** TypeScript, Fastify, PostgreSQL 16, Docker, Vitest, GitHub Actions
+
+### 2. PLC Compiler
 **Repository:** [https://github.com/blakemcgahee/PLC_Project](https://github.com/blakemcgahee/PLC_Project)
 
 * **Core Concepts:** Compiler Design, Lexical Analysis, Recursive Descent Parsing, Semantic Analysis, Code Generation, Interpreter Design.
@@ -36,7 +56,7 @@ These are my most significant projects, showcasing my proficiency in core comput
 | **Generation** | Generator | Emits target code from the validated AST |
 | **Execution** | Interpreter | Executes the generated output directly |
 
-### 2. Cache Simulation
+### 3. Cache Simulation
 **Repository:** [https://github.com/blakemcgahee/Cache-Simulation](https://github.com/blakemcgahee/Cache-Simulation)
 
 * **Core Concepts:** Computer Architecture, Memory Hierarchy, LRU/FIFO Replacement Policies, Associativity, System Optimization.
@@ -49,7 +69,7 @@ These are my most significant projects, showcasing my proficiency in core comput
 | **Associativity** | Direct-mapped to Fully-associative | Compare trade-offs between complexity and reduced conflict misses. |
 | **Replacement Policy** | LRU, FIFO | Compare effectiveness in managing blocks. |
 
-### 3. A Search Algorithm Performance Study
+### 4. A Search Algorithm Performance Study
 **Repository:** [https://github.com/blakemcgahee/the-searchers-final-project](https://github.com/blakemcgahee/the-searchers-final-project)
 
 * **Core Concepts:** Comparative Algorithm Analysis, Data Visualization, Big O Notation, Algorithm Efficiency.
