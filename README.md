@@ -1,109 +1,86 @@
-# 🌟 Blake McGahee's Professional Portfolio 🌟
+# Blake McGahee
 
-### 👋 Hello!
+I'm finishing a B.S. in Computer Science at the University of Florida (December 2026). Most of my recent work is backend development: database backed APIs, authentication and access control, and automated testing. The projects below also cover compilers, computer architecture, and data structures in TypeScript, Java, C++, and Python.
 
-I'm a passionate and results-driven developer focusing on **Backend Systems, Data Structures, Algorithm Efficiency, and Systems Programming**. I thrive on tackling complex engineering challenges, from designing database backed APIs to optimizing search algorithms and building core computer architecture simulations. I specialize in **TypeScript**, **Python**, **C/C++**, and **Java**, and I'm always looking for opportunities to leverage efficient code to solve real-world problems.
+## Skills
 
-### 🛠️ Key Skills & Technologies
-
-| Area | Skills Highlighted |
+| Area | Skills |
 | :--- | :--- |
-| **Backend & Databases** | REST API Design, PostgreSQL, Schema Design and Migrations, Authentication, Access Control |
-| **Data Structures & Algos** | AVL Trees, Linked Lists, Graph Theory, Iterative & Recursive Algorithms |
-| **Compiler Design** | Lexing, Parsing, AST Construction, Semantic Analysis, Code Generation |
-| **Game Development** | Minesweeper, Sudoku Generator, Blackjack, Pakudex / Pakuri |
-| **Systems & Architecture** | Cache Simulation (LRU/FIFO), Memory Hierarchy, Low-level Programming (C/C++) |
-| **Analysis & Optimization** | Big O Notation, Comparative Performance Analysis, Data Compression (RLE) |
-| **Languages** | C/C++, Python, Java, TypeScript, SQL |
+| **Backend and Databases** | REST API design, PostgreSQL, schema design and migrations, authentication, access control |
+| **Data Structures and Algorithms** | AVL trees, linked lists, graph algorithms, backtracking, iterative and recursive algorithms |
+| **Compiler Design** | Lexing, parsing, AST construction, semantic analysis, code generation |
+| **Systems and Architecture** | Cache simulation (LRU and FIFO), memory hierarchy, C++ |
+| **Analysis** | Big O analysis, comparative performance testing, data compression (RLE) |
+| **Languages** | TypeScript, Java, C++, Python, SQL |
 
-***
+## Featured Projects
 
-## 💻 Featured Projects (Deep Dive)
-
-These are my most significant projects, showcasing my proficiency in core computer science principles and advanced analysis.
-
-### 1. Health Hub (In Progress)
+### 1. Health Hub (in progress)
 **Repository:** Private (UF Senior Design team project, source available on request)
 **Status:** In active development, pilot demo planned for December 2026
 
-* **Core Concepts:** Backend API Design, Relational Database Modeling, Authentication and Access Control, Automated Testing, Containerized Development.
-* **Summary:** A **full stack patient engagement platform** for independent practices and mid market clinics, built by a team of three in a TypeScript monorepo. Patients book and manage appointments, clinical staff chart encounters and write notes, and administrators manage staff, financials, and audit history. I own the **backend, database, and data layer**.
-* **My Contributions:**
+A full stack patient engagement platform for independent practices and mid market clinics, built by a team of three in a TypeScript monorepo. Patients book and manage appointments, clinical staff chart encounters and write notes, and administrators manage staff, financials, and audit history. I own the backend, database, and data layer.
 
 | Area | What I Built |
 | :--- | :--- |
 | **Database** | PostgreSQL schema covering identity, scheduling, clinical, billing, and audit data, with forward and rollback migrations |
 | **Authentication** | Login and session management with Argon2 password hashing and hashed session tokens that can be revoked |
 | **Access Control** | Role based permissions for patients, clinical staff, and administrators, enforced on the server and covered by negative tests |
-| **Scheduling** | Provider availability and booking logic, with database constraints that make double booking and overlapping appointments impossible |
+| **Scheduling** | Provider availability and booking logic, with database constraints that prevent double booking and overlapping appointments |
 | **Testing** | 390+ automated tests with Vitest across API routes and database behavior |
-| **Data** | Deterministic synthetic seed data generator for realistic demo and test datasets |
+| **Data** | Deterministic synthetic seed data generator for demo and test datasets |
 
-* **Stack:** TypeScript, Fastify, PostgreSQL 16, Docker, Vitest, GitHub Actions
+**Stack:** TypeScript, Fastify, PostgreSQL 16, Docker, Vitest, GitHub Actions
 
 ### 2. PLC Compiler
-**Repository:** [https://github.com/blakemcgahee/PLC_Project](https://github.com/blakemcgahee/PLC_Project)
+**Repository:** [github.com/blakemcgahee/PLC_Project](https://github.com/blakemcgahee/PLC_Project)
 
-* **Core Concepts:** Compiler Design, Lexical Analysis, Recursive Descent Parsing, Semantic Analysis, Code Generation, Interpreter Design.
-* **Summary:** A **full compiler pipeline** built from scratch in Java, implementing every stage of compilation end-to-end. Processes a custom programming language through tokenization, parsing, type checking, and execution.
-* **Analysis Focus:**
+A full compiler pipeline built from scratch in Java. It takes a custom programming language through tokenization, parsing, type checking, and execution.
 
 | Stage | Component | Responsibility |
 | :--- | :--- | :--- |
-| **Lexing** | Lexer | Tokenizes raw source code into structured tokens |
-| **Parsing** | Parser | Builds an AST via recursive descent parsing |
+| **Lexing** | Lexer | Tokenizes raw source code |
+| **Parsing** | Parser | Builds an AST with recursive descent parsing |
 | **Analysis** | Analyzer | Performs semantic analysis and type checking |
 | **Generation** | Generator | Emits target code from the validated AST |
-| **Execution** | Interpreter | Executes the generated output directly |
+| **Execution** | Interpreter | Runs the program directly |
 
 ### 3. Cache Simulation
-**Repository:** [https://github.com/blakemcgahee/Cache-Simulation](https://github.com/blakemcgahee/Cache-Simulation)
+**Repository:** [github.com/blakemcgahee/Cache-Simulation](https://github.com/blakemcgahee/Cache-Simulation)
 
-* **Core Concepts:** Computer Architecture, Memory Hierarchy, LRU/FIFO Replacement Policies, Associativity, System Optimization.
-* **Summary:** A detailed **Cache Simulation** and performance analysis, demonstrating an understanding of memory hierarchy. It evaluates cache hit rates and analyzes the impact of parameters like associativity, cache size, and replacement policy.
-* **Analysis Focus:**
+A cache simulator and performance analysis that measures hit rates as cache size, associativity, and replacement policy change.
 
 | Parameter | Values Examined | Goal |
 | :--- | :--- | :--- |
-| **Cache Size** | 256 B to 16,384 B | Observe how hit rate scales with total capacity. |
-| **Associativity** | Direct-mapped to Fully-associative | Compare trade-offs between complexity and reduced conflict misses. |
-| **Replacement Policy** | LRU, FIFO | Compare effectiveness in managing blocks. |
+| **Cache Size** | 256 B to 16,384 B | See how hit rate scales with capacity |
+| **Associativity** | Direct mapped to fully associative | Weigh added complexity against fewer conflict misses |
+| **Replacement Policy** | LRU, FIFO | Compare how well each manages blocks |
 
-### 4. A Search Algorithm Performance Study
-**Repository:** [https://github.com/blakemcgahee/the-searchers-final-project](https://github.com/blakemcgahee/the-searchers-final-project)
+### 4. Search Algorithm Performance Study
+**Repository:** [github.com/blakemcgahee/the-searchers-final-project](https://github.com/blakemcgahee/the-searchers-final-project)
 
-* **Core Concepts:** Comparative Algorithm Analysis, Data Visualization, Big O Notation, Algorithm Efficiency.
-* **Summary:** A comprehensive study and **comparison of various search algorithms** to measure and visualize their performance and efficiency across different datasets and constraints, focusing on real-world runtime analysis.
+A comparison of search algorithms that measures and visualizes their runtime across different datasets and constraints.
 
-***
+## Data Structures and Algorithms
 
-### ⚙️ Algorithms & Core Applications
-
-This section includes projects focused on data structures, core algorithms, and foundational development.
-
-| Project Name | Primary Language | Description | Link |
+| Project | Language | Description | Link |
 | :--- | :--- | :--- | :--- |
-| **AVL Trees** | C++ | **Implementation of AVL Trees**, a self-balancing BST, demonstrating the logic for insertion, deletion, and rotation operations to maintain guaranteed $O(\log n)$ complexity. | [https://github.com/blakemcgahee/C-CodingProjects/tree/main/AVL%20Trees](https://github.com/blakemcgahee/C-CodingProjects/tree/main/AVL%20Trees) |
-| **Comparing Search Algorithms** | C++ | A secondary **performance study comparing the efficiency** of various search algorithms across different data sizes and structures. | [https://github.com/blakemcgahee/C-CodingProjects/tree/main/Comparing%20Search%20Algorithms](https://github.com/blakemcgahee/C-CodingProjects/tree/main/Comparing%20Search%20Algorithms) |
-| **Linked List** | C++ | A foundational implementation of a **Linked List** (likely singly or doubly), demonstrating essential operations like traversal, insertion, and deletion for dynamic data management. | [https://github.com/blakemcgahee/C-CodingProjects/tree/main/Linked%20List](https://github.com/blakemcgahee/C-CodingProjects/tree/main/Linked%20List) |
-| **Simplified PageRank Algorithm** | C++ | Implementation of a **Simplified PageRank Algorithm** to determine the 'importance' of nodes in a directed graph, using iterative calculations based on link structure. | [https://github.com/blakemcgahee/C-CodingProjects/tree/main/Simplified%20PageRank%20Algorithm](https://github.com/blakemcgahee/C-CodingProjects/tree/main/Simplified%20PageRank%20Algorithm) |
-| **Image Processing** | C++ | Project applying core **image processing techniques** (e.g., filtering, color correction, feature detection) to transform and analyze image data. | [https://github.com/blakemcgahee/C-CodingProjects/tree/main/Image%20Processing](https://github.com/blakemcgahee/C-CodingProjects/tree/main/Image%20Processing) |
-| **RLE Program** | Python | **Implementation of Run-Length Encoding (RLE)**, a lossless data compression technique, handling multiple data conversion paths for efficient compression. | [https://github.com/blakemcgahee/pythonProjects/tree/main/Project%202A%20RLE](https://github.com/blakemcgahee/pythonProjects/tree/main/Project%202A%20RLE) |
-| **Console GFX** | Python | Project focused on **manipulating graphics directly within the terminal**, showcasing methods for low-level display rendering and character-based visual output. | [https://github.com/blakemcgahee/pythonProjects/tree/main/Project%202A%20RLE](https://github.com/blakemcgahee/pythonProjects/tree/main/Project%202A%20RLE) |
+| **AVL Trees** | C++ | Self balancing binary search tree with insertion, deletion, and rotations that keep operations at $O(\log n)$. | [Code](https://github.com/blakemcgahee/C-CodingProjects/tree/main/AVL%20Trees) |
+| **Comparing Search Algorithms** | C++ | Runtime comparison of search algorithms across different data sizes and structures. | [Code](https://github.com/blakemcgahee/C-CodingProjects/tree/main/Comparing%20Search%20Algorithms) |
+| **Linked List** | C++ | Linked list implementation with traversal, insertion, and deletion. | [Code](https://github.com/blakemcgahee/C-CodingProjects/tree/main/Linked%20List) |
+| **Simplified PageRank** | C++ | Ranks the nodes of a directed graph by iterating over its link structure. | [Code](https://github.com/blakemcgahee/C-CodingProjects/tree/main/Simplified%20PageRank%20Algorithm) |
+| **Image Processing** | C++ | Reads and writes image files and applies pixel level transformations to them. | [Code](https://github.com/blakemcgahee/C-CodingProjects/tree/main/Image%20Processing) |
+| **RLE and Console Graphics** | Python | Run length encoding for lossless image compression, with conversion between raw, encoded, and string formats and a terminal display for the results. | [Code](https://github.com/blakemcgahee/pythonProjects/tree/main/Project%202A%20RLE) |
 
-***
+## Games
 
-### 🎮 Game Development
-
-| Project Name | Primary Language | Description | Link |
+| Project | Language | Description | Link |
 | :--- | :--- | :--- | :--- |
-| **Minesweeper** | C++ | A classic **Minesweeper game implementation** built on a 2D grid structure, showcasing proficiency in recursive/iterative neighbor-checking algorithms and state-based game logic. | [https://github.com/blakemcgahee/C-CodingProjects/tree/main/Minesweeper](https://github.com/blakemcgahee/C-CodingProjects/tree/main/Minesweeper) |
-| **Sudoku Generator** | Python | An application for generating and solving Sudoku puzzles, built around **backtracking algorithms** and constraint satisfaction logic. | [https://github.com/blakemcgahee/pythonProjects/tree/main/Project%204](https://github.com/blakemcgahee/pythonProjects/tree/main/Project%204) |
-| **Blackjack** | Python | A text-based **Blackjack (21) simulation** demonstrating state-based game logic, handling player input, and utilizing random number generation for card dealing. | [https://github.com/blakemcgahee/pythonProjects/tree/main/Project1](https://github.com/blakemcgahee/pythonProjects/tree/main/Project1) |
-| **Pakudex / Pakuri** | Python | An **OOP-focused project** simulating a 'Pokédex-like' data management system (Pakudex), demonstrating custom class creation, inheritance, and data organization. | [https://github.com/blakemcgahee/pythonProjects/tree/main/Project%203](https://github.com/blakemcgahee/pythonProjects/tree/main/Project%203) |
+| **Minesweeper** | C++ | Minesweeper on a 2D grid with recursive neighbor reveal and game state handling. | [Code](https://github.com/blakemcgahee/C-CodingProjects/tree/main/Minesweeper) |
+| **Sudoku Generator** | Python | Generates and solves Sudoku puzzles with backtracking and constraint checking. | [Code](https://github.com/blakemcgahee/pythonProjects/tree/main/Project%204) |
+| **Blackjack** | Python | Text based Blackjack with player input, game state, and random card dealing. | [Code](https://github.com/blakemcgahee/pythonProjects/tree/main/Project1) |
+| **Pakudex** | Python | Object oriented collection manager using custom classes and inheritance. | [Code](https://github.com/blakemcgahee/pythonProjects/tree/main/Project%203) |
 
-***
+## Contact
 
-### 📧 Contact & Connect
-
-**Email:** `blakemcgahee.bm@gmail.com`
+**Email:** blakemcgahee.bm@gmail.com
